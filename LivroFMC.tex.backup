@@ -1,0 +1,28 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+
+
+
+
+
+\begin{document}
+
+  \title{Tradução parcial do capítulo 2, do livro `Sets, logic and maths for computing'}
+  \author{Gabriel Queiroz de Almeida Pereira}
+  \author{Cleydson Talles Araujo}
+  
+  \maketitle
+  Bom dia!
+  
+\end{document}
+
+\begin{document}
+ 
+ Será?
+ 
+\end{document}
