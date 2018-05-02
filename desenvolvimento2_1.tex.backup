@@ -1,5 +1,13 @@
 
-Esboço do capítulo
+{\large 2.1 Pares ordenados e produto cartesiano.}
 \\
 \\
-Relações tem uma participação importante na ciência da computação.
+
+
+Anteriormente, no estudo de conjuntos, certamente foi estudado conjuntos em que continham apenas uma variável livre.
+Nesse estudo, nós extenderemos essa ideia para incluir mais uma variável.
+
+\\
+
+Por exemplo, suponha P(x,y) sendo P uma definição com dois valores, um para x e outro para y. Nós não podemos afirmar que essa
+definição é verdadeira ou falsa até que tenhamos um valor para cada variável.
