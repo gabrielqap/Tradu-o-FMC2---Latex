@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.5.2)  2 MAY 2018 18:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.5.2)  2 MAY 2018 19:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -438,10 +438,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )) [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+]
 \openout2 = `desenvolvimento2_1.aux'.
 
- (./desenvolvimento2_1.tex
+
+(./desenvolvimento2_1.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--5
 
  []
@@ -466,26 +467,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--15
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--15
+
+ []
+
 [2
 
 
 ] (./LivroFMC.aux (./capa.aux) (./desenvolvimento2_1.aux)) ) 
 Here is how much of TeX's memory you used:
- 1642 strings out of 494929
- 16656 string characters out of 6180143
- 64895 words of memory out of 5000000
+ 1641 strings out of 494930
+ 16646 string characters out of 6180169
+ 66892 words of memory out of 5000000
  4942 multiletter control sequences out of 15000+600000
  10580 words of font info for 35 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  27i,6n,24p,225b,199s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/gabriel/.te
-xmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/gabriel/.texmf-var/f
-onts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/gabriel/.texmf-var/fonts/pk/l
-jfour/jknappen/ec/ecrm1728.600pk>
-Output written on LivroFMC.pdf (2 pages, 30482 bytes).
-PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 18 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+Output written on LivroFMC.dvi (2 pages, 3308 bytes).
