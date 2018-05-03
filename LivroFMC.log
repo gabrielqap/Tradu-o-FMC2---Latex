@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.5.2)  3 MAY 2018 15:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.5.2)  3 MAY 2018 18:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -438,10 +438,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )) [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+]
 \openout2 = `desenvolvimento2_1.aux'.
 
- (./desenvolvimento2_1.tex
+
+(./desenvolvimento2_1.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--5
 
  []
@@ -477,8 +478,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--38
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--52
-
+Overfull \hbox (15.00084pt too wide) in paragraph at lines 39--52
+\T1/cmr/m/n/12 dis-cu-ti-mos atribuições de val-ores para as var-iáveis \T1/cmr
+/m/it/12 x \T1/cmr/m/n/12 e \T1/cmr/m/it/12 y \T1/cmr/m/n/12 nessa atribuição
  []
 
 
@@ -487,7 +489,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--52
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--58
+Underfull \hbox (badness 10000) in paragraph at lines 39--52
 
  []
 
@@ -495,7 +497,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--58
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 59--73
+Underfull \hbox (badness 10000) in paragraph at lines 53--58
 
  []
 
@@ -504,27 +506,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--73
 
  []
 
-) [3] (./LivroFMC.aux (./capa.aux) (./desenvolvimento2_1.aux)) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--100
+
+ []
+
+[3]) [4] (./LivroFMC.aux (./capa.aux) (./desenvolvimento2_1.aux)) ) 
 Here is how much of TeX's memory you used:
- 1656 strings out of 494929
- 16806 string characters out of 6180143
- 67895 words of memory out of 5000000
- 4952 multiletter control sequences out of 15000+600000
- 13741 words of font info for 45 fonts, out of 8000000 for 9000
+ 1645 strings out of 494930
+ 16690 string characters out of 6180169
+ 69892 words of memory out of 5000000
+ 4944 multiletter control sequences out of 15000+600000
+ 12040 words of font info for 37 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  27i,6n,24p,225b,199s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/talles/
-.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/talles/.texmf-var
-/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </home/talles/.texmf-var/fonts/pk/
-ljfour/jknappen/ec/ecrm1000.600pk> </home/talles/.texmf-var/fonts/pk/ljfour/jkn
-appen/ec/ecrm1200.600pk> </home/talles/.texmf-var/fonts/pk/ljfour/jknappen/ec/e
-crm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on LivroFMC.pdf (3 pages, 70926 bytes).
-PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+Output written on LivroFMC.dvi (4 pages, 8160 bytes).

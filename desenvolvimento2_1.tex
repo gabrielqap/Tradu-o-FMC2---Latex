@@ -1,5 +1,5 @@
 
-{\large 2.1 Pares ordenados e produto cartesiano.}
+\large 2.1 Pares ordenados e produto cartesiano.
 \\
 \\
 
@@ -80,7 +80,21 @@ coordenadas de todos os pontos do plano. Por razôes óbvias, este conjunto gera
 3. (\textit{A} $\times$ \textit{B}) $\cap$ (\textit{C} $\times$ \textit{D}) = (\textit{A} $\cap$ \textit{C}) $\times$ (\textit{B}
 $\cap$ \textit{D}).
 \\
-4. (\textit{A} $\times$ \textit{B}) $\cup$ (\textit{C} $\times$ \textit{D}) = (\textit{A} $\cup$ \textit{C}) $\times$ (\textit{B}
+4. (\textit{A} $\times$ \textit{B}) $\cup$ (\textit{C} $\times$ \textit{D}) $\subseteq$ (\textit{A} $\cup$ \textit{C}) $\times$ (\textit{B}
 $\cup$ \textit{D}).
 \\
 5. \textit{A} $\times$ $\emptyset$ = $\emptyset$ $\times$ \textit{A} = $\emptyset$.  
+\\
+\\
+\textit{Prova de 1. } Seja \textit{p} um elemento arbitrário de \textit{ A $\times$ (B $\cap$ C)}. Então, pela definição de produto
+cartesiano, \textit{p} deve ser um par ordenado em que a primeira coordenada é um elemento de A e a segunda coordenada é um elemento
+de \textit{B $\cap$ C}. Em outras palavras, \textit{p = (x,y)} para algum \textit{x $\in$ A} e \textit{y $\in$ B $\cap$ C}.
+Desde que \textit{y $\in$ B $\cap$ C}, \textit{y $\in$ B} e \textit{y $\in$ C}. Desde que \textit{x $\in$ A} e \textit{y $\in$ B},
+\textit{p = (x,y) $\in$ A $\times$ B}, e simultaneamente \textit{p $\in$ A $\times$ C}. Logo, \textit{p $\in$ (A $\times$ B) 
+$\cap$ (A $\times$ C)}. Desde que \textit{p} é um elemento arbitrário de \textit{ A $\times$ (B $\cap$ C)}, isso mostra que 
+\textit{ A $\times$ (B $\cap$ C) $\subseteq$ (A $\times$ B) $\cap$ (A $\times$ C)}.
+\\
+  Agora seja \textit{p} um elemento arbitrário de \textit{(A $\times$ B) $\cap$ (A $\times$ C)}. Então \textit{p} $\in$
+  \textit{A $\times$ B}, então \textit{p = (x,y)} para algum \textit{x $\in$ A} e {y $\in$ B}. Também, \textit{(x,y) = p $\in$
+  A $\times$ C}, então \textit{y $\in$ C}.
+  
