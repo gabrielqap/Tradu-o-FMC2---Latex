@@ -8,26 +8,79 @@ Anteriormente, no estudo de conjuntos, certamente foi estudado conjuntos em que 
 Nesse estudo, nós extenderemos essa ideia para incluir mais uma variável.
 \\
 \\
-Por exemplo, suponha P(x,y) sendo P uma atribuição com dois valores, um para x e outro para y. Nós não podemos afirmar que essa
-atribuição é verdadeira ou falsa até que tenhamos um valor para cada variável.
-Logo, se nós queremos um conjunto verdadeiro com os valores que fazem essa atribuição ser verdadeira, então esse conjunto não 
-contém apenas valores individuais, mas pares de números.
+Por exemplo, suponha \textit{P}(\textit{x}, \textit{y}) sendo \textit{P} uma atribuição com dois valores, um para \textit{x} 
+e outro para \textit{y}. Nós não podemos afirmar que essa atribuição é verdadeira ou falsa até que tenhamos um valor para cada
+variável. Logo, se nós queremos um conjunto verdadeiro com os valores que fazem essa atribuição ser verdadeira, então esse 
+conjunto não contém apenas valores individuais, mas pares de números.
 \\
 \\
 Nós vamos especificar que se nós queremos um par de valores, logo, nós devemos escrevê-los em parenteses, separados por uma 
-vírgula. Por exemplo: Seja D(x,y), que significa "x divide Y". Logo, D(6,18) é verdade desde que 6 | 18. 
-Entretanto, note que 18 não divide 6. Logo, o par (18,6) com denifição D é falso.
+vírgula. Por exemplo: Seja \textit{D}(\textit{x},\textit{y}), que significa "\textit{x} divide \textit{y}". Logo,
+\textit{D}(\textit{6},\textit{18}) é verdade desde que 6 | 18. Entretanto, note que 18 não divide 6. Logo, o par (18,6) 
+com denifição \textit{D} é falso.
 \\
 \\
 Ou seja, devemos ficar atentos a destinguir o par (18,6) com o par (6,18). Porque a ordem de valores de um par faz a diferença.
-Logo, nós vamos nos referir ao par (a,b) como um PAR ORDENADO, Com primeira coordenada A e a segunda coordenada B.
+Logo, nós vamos nos referir ao par (\textit{a},\textit{b}) como um \textit{par ordenado}, Com \textit{primeira coordenada a e 
+a segunda coordenada B}.
 \\
 \\
-Você provavelmente já viu pares ordenados antes, estudando pontos num plano cartesiano. O uso de x e y para identificar pontos 
-no plano funciona assumindo que cada ponto no plano um par ordenado, os quais, x e y são coordenadas do ponto. Os pares devem 
-estar ordenados porque, por exemplo, os pontos (2,5) e (5,2) são pontos diferentes no plano. Nesse caso as coordenadas de pares
-ordenados são numeros reais, mas pares ordenados podem haver qualquer coisa em suas coordenadas.
+Você provavelmente já viu pares ordenados antes, estudando pontos num plano cartesiano. O uso de \textit{x} e \textit{y} para 
+identificar pontos no plano funciona assumindo que cada ponto no plano um par ordenado, os quais, \textit{x} e \textit{y} são
+coordenadas do ponto. Os pares devem estar ordenados porque, por exemplo, os pontos (2,5) e (5,2) são pontos diferentes no plano.
+Nesse caso as coordenadas de pares ordenados são numeros reais, mas pares ordenados podem haver qualquer coisa em suas coordenadas.
 \\
-Por exemplo, seja C(x,y), que suporta que "x tem y crianças". Nesse afirmação, a variável x abrange o conjunto de todas as 
-pessoas e y abrange o conjunto de todos números naturais. Logo, os únicos pares ordenados que fazem sentido são aqueles em
-que a primeira coordenada é uma pessoa e a segunda coordenada é um número natural.
+Por exemplo, seja \textit{C}(\textit{x}, \textit{y}), que suporta que "\textit{x} tem \textit{y} crianças". Nesse afirmação, a 
+variável \textit{x} abrange o conjunto de todas as pessoas e \textit{y} abrange o conjunto de todos números naturais. Logo, os 
+únicos pares ordenados que fazem sentido são aqueles em que a primeira coordenada é uma pessoa e a segunda coordenada é um número
+natural.
+\\
+
+Portanto, o unico par ordenado que faz sentido considerar quando discutimos atribuições de valores para as variáveis \textit{x} e
+\textit{y} nessa atribuição são pares no qual a primeira é uma pessoa e a segunda um número natural.
+\\
+Por exemplo, a atribuição (Príncipe Charles, 2) faz \textit{C}(\textit{x}, \textit{y}) ser verdade, pois o Príncipe Charles de fato 
+tem dois filhos, onde a atribuição (Jhonny Carson, 37) faz a declaração ser falsa. Note que a atribuição (2, Príncipe Charles) não 
+faz sentido, porque leva a uma declaração ``2 tem Príncipe Charles filhos''. 
+\\
+\\
+No geral, se \textit{P}(\textit{x}, \textit{y}) é uma declaração no qual \textit{x} varia sobre um set \textit{A} e \textit{y} varia
+sobre um set \textit{B}, então a única atribuição de valores para \textit{x} e \textit{y} que irá fazer sentido em \textit{P}
+(\textit{x}, \textit{y}) vão ser os pares ordenados no qual a primeira coordenada é um elemento de \textit{A} e a segunda é de
+\textit{B}. Logo, fazemos a seguinte definição:
+\\
+
+\textbf{Definição 2.1.1.} suponha \textit{A} e \textit{B} são sets arbitrários. Então o \textit{produto cartesiano} de
+\textit{A} e \textit{B}, denotado de \textit{A} $\times$ \textit{B}, é o set de todo par ordenado no qual a primeira 
+coordenada é um elemento de \textit{A} e a segunda é um elemento de \textit{B}. Em outras palavras, 
+\textit{A} $\times$ \textit {B} = \{(\textit{a}, \textit{b})|\textit{a} $\in$ \textit{A} e \textit{b} $\in$ \textit{B}\}.
+\\
+
+\textbf{Exemplo 2.1.2.}
+\\
+1. Se \textit{A} = \{red, green\} e \textit{B} = \{2, 3, 5\} então \textit{A} $\times$ \textit{B} = \{(red, 2), (red, 3), (red,5),
+ (green, 2), (green, 3), (green, 5)\}.
+\\
+2. Se \textit{P} = o set de todas as pessoas  entao \textit{P} $\times$ $\mathbb{N}$ = \{(\textit{p}, \textit{n})|\textit{p} é uma 
+pessoa e \textit{n} um número natural\} = \{(Príncipe Charles, 0), (Príncipe Charles, 1), (Príncipe Charles, 2),...,
+(Johnny Carson, 0), (Johnny Carson, 1),...\}. Esses pares ordenados fazem sentido como atribuição de valores de variáveis livres
+\textit{x} e \textit{y} na declaração \textit{C}(\textit{x}, \textit{y}).
+\\
+3. $\mathbb{R}$ $\times$ $\mathbb{R}$ = \{(\textit{x}, \textit{y})|\textit{x} e \textit{y} são números reais\}. Essas são as 
+coordenadas de todos os pontos do plano. Por razôes óbvias, este conjunto geralmente é escrito $\mathbb{R}^2$.
+\\
+\\
+
+\textbf{Teorema 2.1.3.} \textit{Suponha A, B, C, e D são conjuntos.}
+\\
+1. \textit{A} $\times$ (\textit{B} $\cap$ \textit{C}) = (\textit{A} $\times$ \textit{B}) $\cap$ (\textit{A} $\times$ \textit{C}).
+\\
+2. \textit{A} $\times$ (\textit{B} $\cup$ \textit{C}) = (\textit{A} $\times$ \textit{B}) $\cup$ (\textit{A} $\times$ \textit{C}).
+\\
+3. (\textit{A} $\times$ \textit{B}) $\cap$ (\textit{C} $\times$ \textit{D}) = (\textit{A} $\cap$ \textit{C}) $\times$ (\textit{B}
+$\cap$ \textit{D}).
+\\
+4. (\textit{A} $\times$ \textit{B}) $\cup$ (\textit{C} $\times$ \textit{D}) = (\textit{A} $\cup$ \textit{C}) $\times$ (\textit{B}
+$\cup$ \textit{D}).
+\\
+5. \textit{A} $\times$ $\emptyset$ = $\emptyset$ $\times$ \textit{A} = $\emptyset$.  
