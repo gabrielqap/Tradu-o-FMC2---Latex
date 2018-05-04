@@ -1,0 +1,33 @@
+{\textbf{\large 2.2 Relações.}}
+\\
+\\
+
+Suponha \textit{P}(\textit{x}, \textit{y}) é uma declaração com duas varáveis livres \textit{x} e \textit{y}. Geralmente essa
+declaração pode ser expressada como uma realação de entre \textit{x} e \textit{y}. O verdadeiro conjunto da declaração
+\textit{P}(\textit{x}, \textit{y}) é um conjunto de pares ordenados quando essa relação é válida. De fato, geralmente é útil 
+pensar que qualquer conjunto de pares ordenados como um registro quando alguma relação é verdadeira. Esta é a motivação por tras
+da definição seguinte.
+\\
+\\
+
+\textbf{Definição 2.2.1.} Suponha \textit{A} e \textit{B} são conjuntos. Então um conjunto \textit{R} $\subseteq$ \textit{A} 
+$\times$ \textit{B} é chamada uma \textit{relação de A para B}.
+\\
+Se \textit{x} está em \textit{A} e \textit{y} está em \textit{B}, então claramente o conjunto de qualquer declaração \textit{P}
+(\textit{x}, \textit{y}) será uma relação de \textit{A} para \textit{B}. No entanto, note que a definição 2.2.1 não requer que 
+o conjunto de pares ordenados seja definido como o conjunto de alguma declaração para o conjunto ser uma relação. Apesar de pensar
+sobre os conjuntos era a motivação para essa definição, a definição diz nada explícito sobre os conjuntos. De acordo com a definição,
+qualquer subconjunto de \textit{A} $\times$ \textit{B} é chamado uma relação de \textit{A} para \textit{B}.
+\\
+\\
+
+\textbf{Exemplo 4.2.2.} Aqui estão alguns exemplos de relações de um conjunto para outro.
+\\
+1. Seja \textit{A} = \{1, 2, 3\}, \textit{B} = \{3, 4, 5\}, e \textit{R} = \{(1, 3), (1,5), (3, 3)\}. Então \textit{R} $\subseteq$ 
+\textit{A} $\times$ \textit{B}, então \textit{R} é uma relação de \textit{A} para \textit{B}.
+\\
+2. Seja \textit{G} = \{(\textit{x}, \textit{y}) $\in$ $\mathbb{R}$ $\times$ $\mathbb{R}$|\textit{x} > \textit{y}\}. Então \textit{G}
+é uma relação de $\mathbb{R}$ para $\mathbb{R}$.
+\\
+3. Seja \textit{A} = \{1, 2\} e \textit{B} = $\powerset{p}$(\textit{A}) = 
+
