@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.5.2)  4 MAY 2018 11:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.5.2)  4 MAY 2018 16:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -512,23 +512,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--73
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--124
+Underfull \hbox (badness 10000) in paragraph at lines 74--137
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--124
+Underfull \hbox (badness 10000) in paragraph at lines 74--137
 
  []
 
-[3]) [4] (./LivroFMC.aux (./capa.aux) (./desenvolvimento2_1.aux)) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--137
+
+ []
+
+[3] [4]) [5] (./LivroFMC.aux (./capa.aux) (./desenvolvimento2_1.aux)) ) 
 Here is how much of TeX's memory you used:
  1645 strings out of 494930
  16690 string characters out of 6180169
- 73892 words of memory out of 5000000
+ 75892 words of memory out of 5000000
  4944 multiletter control sequences out of 15000+600000
  12040 words of font info for 37 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  27i,6n,24p,225b,199s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on LivroFMC.dvi (4 pages, 10944 bytes).
+Output written on LivroFMC.dvi (5 pages, 11880 bytes).
