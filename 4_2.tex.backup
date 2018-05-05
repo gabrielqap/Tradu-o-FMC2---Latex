@@ -29,5 +29,41 @@ qualquer subconjunto de \textit{A} $\times$ \textit{B} é chamado uma relação 
 2. Seja \textit{G} = \{(\textit{x}, \textit{y}) $\in$ $\mathbb{R}$ $\times$ $\mathbb{R}$|\textit{x} > \textit{y}\}. Então \textit{G}
 é uma relação de $\mathbb{R}$ para $\mathbb{R}$.
 \\
-3. Seja \textit{A} = \{1, 2\} e \textit{B} = $\powerset{p}$(\textit{A}) = 
+3. Seja \textit{A} = \{1, 2\} e \textit{B} = $\mathcal P(A)$ = \{$\emptyset$, \{1\}, \{2\}, \{1, 2\}\}. Seja \textit{E} = 
+\{(\textit{x},\textit{y}) $\in$ \textit{A} $\times$ \textit{B}|\textit{x} $\in$ \textit{y}\}. Então \textit{E} é uma relação de 
+\textit{A} para \textit{B}. Neste caso, \textit{E} = \{(1, \{1\}), (1, \{1, 2\}), (2, \{2\}), (2, \{1, 2\})\}.
+\\
+Para os próximos três exemplos, seja \textit{S} o conjunto de todos os estudantes da sua escola, \textit{R} o conjunto de todos os
+dormitórios, \textit{P} o conjunto de todos os professores e \textit{C} o conjunto de todos os cursos.
+\\
+4. Seja \textit{L} = \{(\textit{s}, \textit{r}) $\in$ \textit{S} $\times$ \textit{R} | o estudante \textit{s} mora no dormitório 
+\textit{r}\}. Então \textit{L} é uma relação de \textit{S} para \textit{R}.
+\\
+5. Seja \textit{E} = \{(\textit{s}, \textit{c}) $\in$ \textit{S} $\times$ \textit{C} | o estudante \textit{s} está matriculado no 
+curso \textit{c}\}. Então \textit{E} é uma relação de \textit{S} para \textit{C}.
+\\
+6. Seja \textit{T} = \{(\textit{c}, \textit{p}) $\in$ \textit{C} $\times$ \textit{P} | o curso \textit{c} é lecionado pelo professor
+\textit{p}\}. Então \textit{T} é uma relação de \textit{C} para \textit{P}.
+\\
+\\
+Aqui temos definições para vários conceitos novos envolvendo relações. Logo iremos dar exemplos ilustrados desses conceitos,
+mas primeiro veja se você consegue entender os conceitos baseado nas suas definições.
+\\
+\\
+\textbf{Definição 2.2.3.} Suponha \textit{R} é uma relação de \textit{A} para \textit{B}. Então o dominio de \textit{R} é o
+conjunto
+
+\begin{center}
+Dom(\textit{R}) = \{\textit{a} $\in$ \textit{A} | $\exists$\textit{b} $\in$ \textit{B}((\textit{a}, \textit{b}) $\in$ \textit{R})\}. 
+\end{center}
+A imagem de \textit{R} é um conjunto
+
+\begin{center}
+Ran(\textit{R}) = \{\textit{b} $\in$ \textit{B} | $\exists$\textit{a} $\in$ \textit{A}((\textit{a}, \textit{b}) $\in$ \textit{R})\}. 
+\end{center}
+O inverso de \textit{R} é a relação $\textit{R}^{-1}$ de \textit{B} para \textit{A} definido como:
+
+\begin{center}
+$\textit{R}^{-1}$ = \{(\textit{b}, \textit{a}) $\in$ \textit{B} $\times$ \textit{A} | (\textit{a}, \textit{b}) $\in$ \textit{R}\}. 
+\end{center}
 
