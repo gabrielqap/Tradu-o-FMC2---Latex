@@ -1,76 +1,52 @@
-
-\large 2.1 Pares ordenados e produto cartesiano.
+\large 4.1 Pares ordenados e produto cartesiano.
 \\
 \\
 
 
-Anteriormente, no estudo de conjuntos, certamente foi estudado conjuntos em que continham apenas uma variável livre.
-Nesse estudo, nós extenderemos essa ideia para incluir mais uma variável.
+Anteriormente, no estudo de conjuntos, foi estudado conjuntos em que continham apenas uma variável livre. Nesse estudo, nós extenderemos essa ideia para premissas com mais de uma variável.
 \\
 \\
-Por exemplo, suponha \textit{P}(\textit{x}, \textit{y}) sendo \textit{P} uma atribuição com dois valores, um para \textit{x} 
-e outro para \textit{y}. Nós não podemos afirmar que essa atribuição é verdadeira ou falsa até que tenhamos um valor para cada
-variável. Logo, se nós queremos um conjunto verdadeiro com os valores que fazem essa atribuição ser verdadeira, então esse 
+\indent Por exemplo, suponha \textit{P}(\textit{x}, \textit{y}) sendo  uma atribuição com duas variáveis livres \textit{x} e \textit{y}. Nós não podemos afirmar que essa atribuição é verdadeira ou falsa até que tenhamos especificados um valor para cada variável. Logo, se nós queremos um conjunto verdadeiro com os valores que fazem essa atribuição ser verdadeira, então esse 
 conjunto não contém apenas valores individuais, mas pares de números.
 \\
 \\
 Nós vamos especificar que se nós queremos um par de valores, logo, nós devemos escrevê-los em parenteses, separados por uma 
 vírgula. Por exemplo: Seja \textit{D}(\textit{x},\textit{y}), que significa "\textit{x} divide \textit{y}". Logo,
-\textit{D}(\textit{6},\textit{18}) é verdade desde que 6 | 18. Entretanto, note que 18 não divide 6. Logo, o par (18,6) 
-com denifição \textit{D} é falso.
+\textit{D}(\textit{6},\textit{18}) é verdade desde que 6 | 18, então, o par de valores \textit{(6,18)}é uma atribuição que faz a declaração \textit{D(x,y)} ser verdade. Entretanto, note que 18 não divid e 6. Logo, o par (18,6) 
+com denifição \textit{D} é falso. Ou seja, devemos ficar atentos a destinguir o par (18,6) com o par (6,18). Porque a ordem de valores de um par faz a diferença.
+Logo, nós vamos nos referir ao par (\textit{a},\textit{b}) como um \textit{par ordenado}, Com \textit{primeira coordenada a e  a segunda coordenada B}.
 \\
-\\
-Ou seja, devemos ficar atentos a destinguir o par (18,6) com o par (6,18). Porque a ordem de valores de um par faz a diferença.
-Logo, nós vamos nos referir ao par (\textit{a},\textit{b}) como um \textit{par ordenado}, Com \textit{primeira coordenada a e 
-a segunda coordenada B}.
-\\
-\\
-Você provavelmente já viu pares ordenados antes, estudando pontos num plano cartesiano. O uso de \textit{x} e \textit{y} para 
-identificar pontos no plano funciona assumindo que cada ponto no plano um par ordenado, os quais, \textit{x} e \textit{y} são
+\indent Você provavelmente já viu pares ordenados antes, estudando pontos num plano cartesiano. O uso de \textit{x} e \textit{y} para 
+identificar pontos no plano funciona assumindo que cada ponto no plano é um par ordenado, os quais, \textit{x} e \textit{y} são
 coordenadas do ponto. Os pares devem estar ordenados porque, por exemplo, os pontos (2,5) e (5,2) são pontos diferentes no plano.
-Nesse caso as coordenadas de pares ordenados são numeros reais, mas pares ordenados podem haver qualquer coisa em suas coordenadas.
-\\
-Por exemplo, seja \textit{C}(\textit{x}, \textit{y}), que suporta que "\textit{x} tem \textit{y} crianças". Nesse afirmação, a 
+Nesse caso as coordenadas de pares ordenados são numeros reais, mas pares ordenados podem haver qualquer coisa em suas coordenadas. Por exemplo, seja \textit{C}(\textit{x}, \textit{y}), que suporta que "\textit{x} tem \textit{y} crianças". Nesse afirmação, a 
 variável \textit{x} abrange o conjunto de todas as pessoas e \textit{y} abrange o conjunto de todos números naturais. Logo, os 
 únicos pares ordenados que fazem sentido são aqueles em que a primeira coordenada é uma pessoa e a segunda coordenada é um número
-natural.
-\\
-
-Portanto, o unico par ordenado que faz sentido considerar quando discutimos atribuições de valores para as variáveis \textit{x} e
-\textit{y} nessa atribuição são pares no qual a primeira é uma pessoa e a segunda um número natural.
-\\
-Por exemplo, a atribuição (Príncipe Charles, 2) faz \textit{C}(\textit{x}, \textit{y}) ser verdade, pois o Príncipe Charles de fato 
-tem dois filhos, onde a atribuição (Jhonny Carson, 37) faz a declaração ser falsa. Note que a atribuição (2, Príncipe Charles) não 
+natural. Por exemplo, a atribuição (Príncipe Charles, 2) faz \textit{C}(\textit{x}, \textit{y}) ser verdade, pois o Príncipe Charles de fato 
+tem dois filhos, enquanto que a atribuição (Jhonny Carson, 37) faz a declaração ser falsa. Note que a atribuição (2, Príncipe Charles) não 
 faz sentido, porque leva a uma declaração ``2 tem Príncipe Charles filhos''. 
 \\
+\indent No geral, se \textit{P}(\textit{x}, \textit{y}) é uma declaração no qual \textit{x} varia sobre um conjunto \textit{A} e \textit{y} varia
+sobre um conjunto \textit{B}, então a única atribuição de valores para \textit{x} e \textit{y} que irá fazer sentido em \textit{P}
+(\textit{x}, \textit{y}) vão ser os pares ordenados no qual a primeira coordenada é um elemento de \textit{A} e a segunda é de \textit{B}. Logo, fazemos a seguinte definição:
 \\
-No geral, se \textit{P}(\textit{x}, \textit{y}) é uma declaração no qual \textit{x} varia sobre um set \textit{A} e \textit{y} varia
-sobre um set \textit{B}, então a única atribuição de valores para \textit{x} e \textit{y} que irá fazer sentido em \textit{P}
-(\textit{x}, \textit{y}) vão ser os pares ordenados no qual a primeira coordenada é um elemento de \textit{A} e a segunda é de
-\textit{B}. Logo, fazemos a seguinte definição:
-\\
-
-\textbf{Definição 2.1.1.} suponha \textit{A} e \textit{B} são sets arbitrários. Então o \textit{produto cartesiano} de
-\textit{A} e \textit{B}, denotado de \textit{A} $\times$ \textit{B}, é o set de todo par ordenado no qual a primeira 
+\textbf{Definição 2.1.1.} Suponha \textit{A} e \textit{B} são conjuntos. Então o \textit{produto cartesiano} de
+\textit{A} e \textit{B}, denotado de \textit{A} $\times$ \textit{B}, é o conjunto de todo par ordenado no qual a primeira 
 coordenada é um elemento de \textit{A} e a segunda é um elemento de \textit{B}. Em outras palavras, 
+\begin{center}
 \textit{A} $\times$ \textit {B} = \{(\textit{a}, \textit{b})|\textit{a} $\in$ \textit{A} e \textit{b} $\in$ \textit{B}\}.
-\\
-
+\end{center}
 \textbf{Exemplo 2.1.2.}
 \\
-1. Se \textit{A} = \{red, green\} e \textit{B} = \{2, 3, 5\} então \textit{A} $\times$ \textit{B} = \{(red, 2), (red, 3), (red,5),
- (green, 2), (green, 3), (green, 5)\}.
-\\
-2. Se \textit{P} = o set de todas as pessoas  entao \textit{P} $\times$ $\mathbb{N}$ = \{(\textit{p}, \textit{n})|\textit{p} é uma 
-pessoa e \textit{n} um número natural\} = \{(Príncipe Charles, 0), (Príncipe Charles, 1), (Príncipe Charles, 2),...,
-(Johnny Carson, 0), (Johnny Carson, 1),...\}. Esses pares ordenados fazem sentido como atribuição de valores de variáveis livres
-\textit{x} e \textit{y} na declaração \textit{C}(\textit{x}, \textit{y}).
-\\
-3. $\mathbb{R}$ $\times$ $\mathbb{R}$ = \{(\textit{x}, \textit{y})|\textit{x} e \textit{y} são números reais\}. Essas são as 
-coordenadas de todos os pontos do plano. Por razôes óbvias, este conjunto geralmente é escrito $\mathbb{R}^2$.
-\\
-\\
+\begin{enumerate}
+\item Se \textit{A} = \{red, green\} e \textit{B} = \{2, 3, 5\} então \textit{A} $\times$ \textit{B} = \{(red, 2), (red, 3), (red,5), (green, 2), (green, 3), (green, 5)\}.
+\item Se \textit{P} = o conjunto de todas as pessoas  entao \textit{P} $\times$ $\mathbb{N}$ = \{(\textit{p}, \textit{n})|\textit{p} é uma pessoa e \textit{n} um número natural\} = \{(Príncipe Charles, 0), (Príncipe Charles, 1), (Príncipe Charles, 2),..(Johnny Carson, 0), (Johnny Carson, 1),...\}. Esses pares ordenados fazem sentido como atribuição de valores de variáveis livres\textit{x} e \textit{y} na declaração \textit{C}(\textit{x}, \textit{y}). 
+\item $\mathbb{R}$ $\times$ $\mathbb{R}$ = \{(\textit{x}, \textit{y})|\textit{x} e \textit{y} são números reais\}. Essas são as coordenadas de todos os pontos do plano. Por razôes óbvias, este conjunto geralmente é escrito $\mathbb{R}^2$.
+\end{enumerate}
 
+\indent A introdução de um novo conceito matemático nos dá a oportunidade de praticar nossa técnicas de prova escrita quando provamos algumas propriedades básicas do novo conceito. Aqui está um teorema dando algumas propriedades básicas de produto cartesiano.
+\\
+\\
 \textbf{Teorema 2.1.3.} \textit{Suponha A, B, C, e D são conjuntos.}
 \\
 1. \textit{A} $\times$ (\textit{B} $\cap$ \textit{C}) = (\textit{A} $\times$ \textit{B}) $\cap$ (\textit{A} $\times$ \textit{C}).
@@ -104,22 +80,176 @@ $\cap$ (A $\times$ C)}. Desde que \textit{p} é um elemento arbitrário de \text
 \\
 \textit{Comentário.} Antes de continuar com as provas de outras partes, nós damos um breve comentário na prova dada. A proposição
 1 é uma equação entre dois conjuntos, tem duas abordagens em que nós poderíamos usar para provar isso. Nós poderíamos provar que
-$\forall$	\textit{p[p $\in$ A $\times$ (B $\cap$ C) $\leftrightarrow$ p $\in$ (A $\times$ B) $\cap$ (A $\times$ C)]} ou nós podemos 
+$\forall$\textit{p[p $\in$ A $\times$ (B $\cap$ C) $\leftrightarrow$ p $\in$ (A $\times$ B) $\cap$ (A $\times$ C)]} ou nós podemos 
 provar tanto que \textit{A $\times$ (B $\cap$ C) $\subseteq$ (A $\times$ B) $\cap$ (A $\times$ C) e (A $\times$ B) $\cap$
 (A $\times$ C) $\subseteq$ A $\times$ (B $\cap$ C)}. Nessa prova, nós escolhemos a segunda opção. O primeiro parágrafo nos da 
 a prova que \textit{A $\times$ (B $\cap$ C) $\subseteq$ (A $\times$ B) $\cap$ (A $\times$ C)} e o segundo dá a prova que 
 \textit{(A $\times$ B) $\cap$ (A $\times$ C) $\subseteq$ A $\times$ (B $\cap$ C).}
 \\
-Na primeira dessas provas nós usamos a abordagem usual de sendo \textit{p} um elemento arbitrário de /textit{A $\times$ (B $\cap$ C)}
+\indent Na primeira dessas provas nós usamos a abordagem usual de sendo \textit{p} um elemento arbitrário de \textit{A $\times$ (B $\cap$ C)}
   e provando que \textit{p $\in$ (A $\times$ B) $\cap$ (A $\times$ C)}. Porque \textit{p $\in$ A $\times$ (B $\cap$ C)}
    significa que \textit{$\exists$x$\exists$y(x $\in$ A $\wedge$ y $\in$ B $\cap$ C $\wedge$ p = (x,y))}, nós imediatamente 
    introduzimos as variáveis x e y pela instanciação existencial. O resto da prova envolve simplesmente trabalhar as definições
    teóricas das operações envolvendo conjuntos. A prova da inclusão oposta está do segundo parágrafo é similar.
 \\
-  Note que em ambas as partes dessa prova nós introduzimos um objeto arbitrário p que se tornou um par ordenado e assim sendo
+  \indent Note que em ambas as partes dessa prova nós introduzimos um objeto arbitrário p que se tornou um par ordenado e assim sendo
   nós ficamos livre para falar que \textit{p = (x,y)} para algum objeto x e y. Na maioria das provas envolvendo produto cartesiano
   matemáticos utilizam esse passo. Se estiver claro desde o começo que um objeto vai se tornar um par ordenado, ele é usualmente
   chamado de \textit{(x, y)} desde o princípio.
 \\ Nós vamos seguir essa prática em nossas provas.
-
+\\ \indent Deixamos a prova das questões 2 e 3 como exercício (veja o exercício 5).
+\\
+\\
+\textit{Prova de 4}. Seja \textit{(x,y)} um elemento arbitrário de \textit{(A $\times$ B) $\cup$ (C $\times$ D)}. Então, ou
+\textit{(x,y) $\in$ A $\times$ B} ou \textit{(x,y) $\in$ C $\times$ D.}
+\\
+\textit{	Caso 1. (x,y) $\in$ A $\times$ B}. Então, \textit{x $\in$ A} e \textit{y $\in$ B}, então, claramente \textit{x $\in$ A $\cup$
+C} e \textit{y $\in$ B $\cup$ D}. Logo, \textit{(x,y) $\in$ (A $\cup$ C) $\times$ (B $\cup$ D).}
+\\
+\textit{	Caso 2. (x,y) $\in$ C $\times$ D.} Um argumento similar mostra que \textit{(x, y) $\in$ (A $\cup$ C) $\times$ 
+  (B $\cup$ D).}
+\\
+  Desde que \textit{(x,y)} é um elemento arbitrário de \textit{(A $\times$ B) $\cup$ (C $\times$ D)}, então isso mostra que \textit{(A $\times$ C) $\cup$ (B $\times$ D) $\subseteq$ (A $\cup$ C) $\times$ (B $\cup$ D)}.
+\\
+\\
+\textit{Prova de 5}. Suponha \textit{A $\times$  $\emptyset$  $\neq$  $\emptyset$ }. Então A $\times$  $\emptyset$  tem pelo menos um elemento, e pela definição de produto cartesiano, esse elemento deve ser um par ordenado \textit{(x,y)} para algum \textit{x $\in$ A} e \textit{y $\in$ $\emptyset$ }. Mas isso é impossível, porque $\emptyset$ não tem nenhum elemento. Logo, \textit{A $\times$ $\emptyset$  = $\emptyset$}. A prova que \textit{$\emptyset$   $\times$  A =  $\emptyset$} é similar.
+\\
+\\
+\textit{Comentário.} A questão 4 fala que um conjunto é um subconjunto de outro, e a prova segue o padrão usual para declarações dessa forma: Nós começamos com um elemento arbitrátrio do primeiro conjunto e então provamos que ele é um elemento do segundo. Está claro que um elemento arbitrário do primeiro conjunto deve ser um par ordenado, por isso nós escrevemos como um par ordenado desde o início.
+\\      
+\indent	 Então, para o resto da prova nós temos que  \textit{(x,y) $\in$  (A $\times$ B) $\cup$ (C $\times$ D)} como foi dado, e o objetivo é provar que \textit{(x,y) $\in$  (A $\cup$ C) $\times$ (B $\cup$ D)}. O dado significa que \textit{(x,y) $\in$ A $\times$ B $\vee$ (x,y) $\in$  C $\times$ D}, então provar por casos é uma estratégia apropriada. Em cada caso é facil provar o objetivo. 
+\\
+\indent	A questão 5 fala que \textit{A $\times$ $\emptyset$ = $\emptyset$ $\wedge$ $\emptyset$ $\times$ A = $\emptyset$ }, logo, vamos tratar isso em duas partes e provar que \textit{A $\times$ $\emptyset$ = $\emptyset$ } e \textit{$\emptyset$  $\times$ A = $\emptyset$} separadamente. Para falar que um conjunto é igual ao conjunto vazio é uma afirmação negativa, embora possa não parecer, mas isso significa que o conjunto \textit{não} tem nenhum elemento. Portanto, não é surpresa de que a prova de \textit{A $\times$ $\emptyset$ = $\emptyset$ } ocorre por contradição. A suposição que \textit{A $\times$ $\emptyset$ = $\emptyset$} significa que $\exists$\textit{p (p $\in$ A $\times$ $\emptyset$}, então nosso próximo passo é introduzir um nome para um elemento de \textit{A $\times$ $\emptyset$}. Mais uma vez, está claro que o novo objeto introduzido é um par ordenado, então nós  escrevemos como um par ordenado \textit{(x,y)} desde o início. Escrever o significa do de \textit{(x,y) $\in$  A $\times$ $\emptyset$} leva automaticamente à uma contradição. 
+ \\
+\indent A prova que \textit{$\emptyset$ $\times$ A = $\emptyset$} é similar, mas não simplesmente falar não prova isso. Assim, a alegação na prova de que esta parte da prova é similar é realmente uma indicação que a segunda parte da prova está segunda deixada como exercício. Você deve trabalhar diante dos detalhes dessa prova na sua cabeça (ou se necessário escreva-as em um papel) para ter certeza que uma prova similar a prova da primeira metade realmente funciona. 
+ \\
+\indent Porque a ordem das coordenadas em um par ordenado importa, \textit{A $\times$  B} e \textit{B $\times$ A } significam coisas diferentes.  Já aconteceu alguma vez de \textit{A $\times$ B = B $\times$ A}? Bem, uma maneira disso ocorrer é se A = B. Claramente, se \textit{A = B}, então \textit{A $\times$ B = A $\times$ A = B $\times$ A}. Mas tem outras possibilidades?
+    \\
+\indent  Aqui está uma prova incorreta que \textit{A $\times$ B = B $\times$ A}, somente se \textit{A = B}: A primeira coordenadas de um par ordenado em \textit{A $\times$ B} vem de \textit{A}, e a primeira coordenada de um par ordenado em \textit{B $\times$ A} vem de \textit{B}. Mas se \textit{A $\times$ B = B $\times$ A}, então a primeira coordenada nesses dois conjuntos devem ser iguais, então \textit{A = B}.
+  \\
+\indent  Isso é um bom exemplo de por quê é importante seguir as regras de provas escritas que nós estudamos invés de permitir a si mesmo se convencer por qualquer raciocínio que parece plausível. O raciocínio informal no parágrafo anterior é incorreto, e nós podemos achar o erro tentando reformular esse raciocínio em uma prova formal. Suponha \textit{A $\times$ B = B $\times$ A}. Para provar que \textit{A = B} nós podemos declarar \textit{x} sendo um elemento arbitrário e tentar provar que \textit{x $\in$ A $\rightarrow$ x $\in$ B}  e \textit{x $\in$ B $\rightarrow$ x $\in$ A}. Para o primeiro desses, nós assumimos que \textit{x $\in$ A} e tentamos provar que \textit{x $\in$ B}. Agora a prova incorreta sugere que nós devemos tentar mostrar que \textit{x} é a primeira coordenada de algum par ordenado em \textit{A $\times$ B}
+   e então usar o fato para que \textit{A $\times$ B = B $\times$ A}. Nós podemos fazer isso tentando achar algum objeto \textit{y $\in$ B} e então formar o par ordenado \textit{(x,y)}. 	Então, nós poderíamos ter \textit{(x,y) $\in$ B $\times$  A}, portanto \textit{x $\in$ B}. Mas, como nós podemos achar um objeto \textit{y} $\in$ \textit{B}? Nós não temos nenhuma informação dada sobre \textit{B}, além do fato que \textit{A $\times$ B = B $\times$ A}. De fato, \textit{B podia ser um conjunto vazio!} Esta é a falha na prova. Se \textit{B = $\emptyset$}, então vai ser impossível escolher um \textit{y $\in$ B}, e a prova vai desmoronar. Por razões similares, a outra metade da prova não irá funcionar se \textit{A = $\emptyset$ }.
+   \\ \indent Nós não apenas encontramos a falha na prova, como também agora podemos descobrir o que fazer com isso. Nós devemos levar em conta a possibilidade de \textit{A} ou \textit{B} serem conjuntos vazios.
+ \\
+ \\
+ \textbf{Teorema 4.1.4.} \textit{Suponha que A e B são conjuntos. Então A $\times$ B = B $\times$ A sse tanto A = $\emptyset$, B = $\emptyset$, ou A = B.}
+ \\
+ \textit{Prova.}($\rightarrow$ ) Suponha \textit{A $\times$ B = B $\times$ A}. Se \textit{A = $\emptyset$ } ou \textit{B = $\emptyset$ },  então não há nada a se provar, então suponha que \textit{A $\neq$  $\emptyset$} e \textit{B $\neq$  $\emptyset$ }. Nós vamos mostrar que \textit{A = B}. Seja \textit{x} um arbitrário, e suponha que \textit{x $\in$ A}. Desde que \textit{B $\neq$  $\emptyset$}, nós podemos escolher algum \textit{y $\in$ B}. Então, \textit{(x,y) $\in$ A $\times$ B = B $\times$ A}, então \textit{x $\in$ B}. 
+ \\ 
+ \indent Agora suponha que \textit{x $\in$ B}. Desde que \textit{A $\neq$  $\emptyset$ } nós podemos escolher algum \textit{z $\in$ A}. Então \textit{A = B}, como requerido.
+ \\
+\indent ( $\leftarrow$ ) Suponha que \textit{A = $\emptyset$ , B = $\emptyset$} ou \textit{A = B}.
+ \\ \textit{Caso 1. A = $\emptyset$.} Então \textit{A $\times$ B = $\emptyset$ $\times$ B = $\emptyset$  = B $\times$ $\emptyset$  = B $\times$ A}.
+ \\ \textit{Caso 2. B = $\emptyset$.} Similar ao caso 1.
+ \\ \textit{Caso 3. A = B.} Então \textit{A $\times$ B = A $\times$ A = B $\times$ A.}
+ \\
+ \\
+ \textit{Comentário.} Com certeza, a declaração para ser provada é uma afirmação sse, então nós provaremos ambas as direções separadamente. Para a direção $\rightarrow$, nosso objetivo é \textit{A = $\emptyset$ $\vee$ B =  $\emptyset$ $\vee$ A = B}, o que poderia ser escrito como (\textit{A = $\emptyset$ $\vee$ B = $\emptyset$) $\vee$ A = B}, logo por uma de nossas estratégias para disjunções do capítulo 3, nós podemos assumir  $\neg$(\textit{A = $\emptyset$ $\vee$ B = $\emptyset$ }) e provar que \textit{A = B}. Note que por uma das leis de DeMorgan $\neg$(\textit{A = $\emptyset$ $\vee$ B = $\emptyset$ }) é equivalente a \textit{A  $\neq$ $\emptyset$  $\vee$  B $\neq$ $\emptyset$}, então nós tratamos isso como duas premissas, \textit{A  $\neq$ $\emptyset$ }e \textit{B $\neq$ $\emptyset$}. Com certeza nós poderíamos ter procedido diferente, por exemplo, assumindo que \textit{A $\neq$ B} e \textit{B $\neq$ $\emptyset$} e então provando que \textit{A = $\emptyset$}. Mas lembre-se do comentário na parte 5 do Teorema 4.1.3 que \textit{A = $\emptyset$} e \textit{B = $\emptyset$} são na verdade afirmações negativas, então, já que é melhor trabalhar com afirmações positivas, é melhor nós negarmos ambas, para ter as premissas  \textit{A  $\neq$ $\emptyset$ }e \textit{B $\neq$ $\emptyset$} e então provar a premissa positiva \textit{A  = B}. As suposições \textit{A  $\neq$ $\emptyset$ }e \textit{B $\neq$ $\emptyset$} são declarações existenciais, então elas são usadas na prova para justificar a introdução de \textit{y} e \textit{z}. A prova que \textit{A = B} procede de maneira óbvia, por introduzindo um elemento arbitrário \textit{x} e então provando que \textit{x $\in$ A $\leftrightarrow$ x $\in$ B}.
+ \\
+ \indent	Para a direção $\leftarrow$ da prova, nós que \textit{A = $\emptyset$ $\vee$ B = $\emptyset$ $\vee$ A = B} como foi dado, então é natural usar a prova por casos. Em cada caso, o objetivo é fácil de provar. 
+    \\
+\indent    Esse teorema é, de longe, uma ilustração melhor de como a matemática é realmente feita do que a maioria dos exemplos que nós temos visto. Normalmente, quando você está tentando achar uma resposta para uma questão matemática, você não sabe antecipadamente qual resposta ela vai ter. Você pode tentar adivinhar a resposta e ter uma ideia de como a prova deve ser, mas seu tentativa de adivinhar pode estar errada e sua ideia de prova pode ser falha. É somente tornando sua ideia em uma prova formal, de acordo com as regras do capítulo 3, que você pode ter certeza que sua prova está certa. Geralmente, no decorrer de tentar construir uma prova formal, você vai descobrir a falha em seu raciocínio, assim como fizemos anteriormente, e então você talvez terá que revisar suas idéias para sobrescrever a falha. O teorema final e a prova são geralmente resultado de repetidos erros e correções. Com certeza, quando alguns matemáticos escrevem seus teoremas e provas, eles seguem nossa regra que provas são para justificar teoremas, não para explicar processos de pensamento, então eles não descrevem todos os erros que eles já cometeram. Então, só porque matemático não explanam os erros que eles já fizeram em suas provas, você não deve se enganar achando que eles nunca cometeram algum!
+    \\
+ \indent   Agora que sabemos como usar pares ordenados e produto cartesiano para falar sobre assumir valores a variáveis livres, nós estamos prontos para definir conjuntos verdadeiros para premissas contendo duas variáveis livres.
+    \\
+    \\
+    \textbf{Denifinição 4.1.5.} Suponha \textit{P(x,y)} é uma declaração com duas variáveis livres, o qual \textit{x} pertence à um conjunto \textit{A} e \textit{y} à um outro conjunto \textit{B}. Então \textit{A $\times$ B} é o conjunto de todas as atribuições para \textit{x} e \textit{y} que faz sentido \textit{P(x,y)}. O \textit{verdadeiro conjunto} de \textit{P(x,y)} é o subconjunto \textit{A $\times$ B} consistindo nas atribuições que fazem essa afirmação ser verdadeira. Em outras palavras,
+    \\
+    \begin{center} 
+    o verdeiro conjunto de \textit{P(x,y) = {(a,b) $\in$ A $\times$ B | P(a,b)}}
+	 \end{center}
+\textbf{ Exemplo 4.1.6.} Quais são os verdeiros conjuntos das seguintes premissas?
+\\
+	1. "\textit{x} tem \textit{y} crianças", onde x varia ao longo do conjunto \textit{P} de todas as pessoas e \textit{y} sobre  $\mathbb{N}$. 
+\\
+   2. "\textit{x} é localizada em \textit{y}", onde \textit{x} varia ao longo do conjunto \textit{C} de todas as cidades e \textit{y} sobre todos os países. 
+\\
+	3. "\textit{y} = 2x-3", onde \textit{x} e \textit{y} variam ao longo de $\mathbb{R}$.
+    \\
+    \\
+    \textit{Soluções}
+    \\
+    \\
+    1. {\textit{(p,n) $\in$ P $\times$ N |} a pessoa \textit{p} tem \textit{n} crianças} = {(Príncipe Charles,2),...}.\\
+   	2.{\textit{(c,n) $\in$ C $\times$ N |} a cidade \textit{c} é localizada no país \textit{n}} = {(Nova Iorque, Estados Unidos), (Tóquio, Japão), (Paris, França),....}.\\
+    3.{\textit{(x,y) $\in$ $\mathbb{R}$ $\times$ $\mathbb{R}$ |} y = 2x -3} = {(0,-3), (1,-1), (2,1),...}. Você provavelmente está familiar com o fato de que os pares ordenados nesse conjunto, são coordenadas de um ponto em um plano  que percorrem uma certa reta, chamamos o \textit{gráfico} da equação y = 2x - 3. Ou seja, você pode pensar no gráfico de uma equação como a imagem de um conjunto verdadeiro!
+  \\
+  \\
+\indent  Muito dos fatos sobre conjuntos verdadeiros para declarações com uma variável livre que nós discutimos no capítulo 1 valem também para declarações com duas variáveis livre. Por exemplo, suponha \textit{T} um conjunto verdadeiro para a premissa \textit{P(x,y)}, onde \textit{x} varia sobre um conjunto \textit{A} e \textit{y} sobre um conjunto \textit{B}. Então, para qualquer \textit{a $\in$ A} e b \textit{b $\in$ B}, a declaração \textit{(a,b) $\in$ T} significa o mesmo que \textit{P(a,b)}. Aliás, se \textit{P(x,y)} é verdade para todo \textit{x $\in$ A} e todo \textit{y $\in$ B}, então \textit{T = A $\times$ B}, e se \textit{P(x,y)} é falso para todo \textit{x $\in$ A} e todo \textit{y $\in$ B}, então \textit{T = $\emptyset$}. Se \textit{S} é o conjunto verdadeiro de outra premissa \textit{Q(x,y)}, então o conjunto verdadeiro da declaração \textit{P(x,y) $\vee$ Q(x,y)} é \textit{T $\cup$ S}.
+  \\
+ \indent Embora nos concentremos em pares ordenados pelo resto desse capítulo, é possível trabalhar com triplas ordenadas, quadrúplas ordenadas e assim por diante. Esses podem ser usados para falar sobre conjuntos verdadeiros para pŕemissas contendo três ou mais variáveis livres. Por exemplo, seja \textit{L(x,y,z)} a declaração de \textit{"x tem vivido em y cidades por z anos"}, onde \textit{x} varia sobre o conjunto \textit{P} de todos as pessoas, \textit{Y} o conjunto \textit{C} de todas as cidades e \textit{z} por $\mathbb{N}$. Então, as suposições de valores para as variáveis livres que faz sentido nessa suposição seria de triplas ordenadas \textit{(p,c,n)}, onde \textit{p} é a pessoa, \textit{c} é a cidade e \textit{n} é um número natural. O conjunto de todas as triplas ordenadas poderia seria escrito como \textit{P $\times$ C $\times$ N}, e o conjunto verdadeiro da declaração \textit{L(x,y,z)} poderia ser o conjunto {\textit{(p,c,n) $\in$ P $\times$ C $\times$ N |} a pessoa \textit{p} viveu na cidade \textit{c} por \textit{n} anos}.
+   \\
+  \begin{center}
+   \textbf{Exercícios}
+  \end{center}
   
+   1*.      Quais são os conjuntos verdadeiros das seguintes premissas? Liste alguns elementos para cada conjunto.
+  \\
+  (a) "\textit{x} é parente de \textit{y}", onde \textit{x} e \textit{y} tem o mesmo tamanho e variam por todo o conjunto \textit{P}, que contém todas as pessoas.
+  \\
+  (b)"Tem alguém que vive em \textit{x} e pertence a \textit{y}", onde \textit{x} abrange todo o conjunto \textit{C} de todas as cidades e y abrange todo o conjunto \textit{U}, de todas as universidades.
+  \\
+  \\
+2.     Quais são os conjuntos verdadeiros das seguintes premissas? Liste alguns elementos para cada conjunto.
+\\
+(a) "\textit{x} vive em \textit{y}", onde \textit{x} varia sobre o conjunto \textit{P} de todas as pessoas e \textit{y} varia sobre o conjunto \textit{C} de todas as cidades.
+\\
+(b) "A população de \textit{x} é \textit{y}", onde \textit{x} varia sobre o conjunto \textit{C} de todas as cidades  e \textit{y} varia por todos os $\mathbb{N}$.
+\\
+\\
+3.      O conjunto verdadeiro das seguintes premissas são subconjuntos de $\mathbb{R}^2$ . Liste alguns elementos para cada conjunto. Faça um desenho mostrando todos os pontos em um plano, onde as coordenadas pertencem a cada conjunto. 
+\\
+(a) \textit{y} =  $\textit{x}{^2}$ - \textit{x} - 2. 
+\\
+(b) \textit{y < x}.
+\\
+(c) Ou \textit{y} =  $\textit{x}{^2}$- \textit{x}- 2 ou \textit{y} = 3\textit{x} - 2.
+\\
+(d) \textit{y < x}, e ou  $\textit{x}{^2}$- \textit{x}- 2 ou \textit{y} = 3\textit{x} - 2.
+\\
+4.    Seja \textit{A} = {1,2,3}, \textit{B} = {1,4}, \textit{C} = {3,4} e \textit{D} = {5}. Compute todos os conjuntos mencionados no Teorema 4.1.3 e verifique que todas as partes do teorema é verdade.
+\\
+\\
+5. Prove partes 2 e 3 do Teorema 4.1.3.
+\\
+\\
+6. O que está errado com a seguinte prova para os conjuntos \textit{A}, \textit{B}, \textit{C} e \textit{D}, (\textit{A $\cup$ C) $\times$ (B $\cup$ D) $\subseteq$ (A $\times$ B) $\cup$ (C $\times$ D)}? (Note que isso é o reverso da inclusão na parte 4 do Teorema 4.1.3.)
+\\
+\\
+\textit{Prova.} Suponha (\textit{x,y}) $\in$ (\textit{A $\cup$ C}) $\times$ (\textit{B $\cup$ D}). Logo, x $\in$ \textit{A $\cup$ C} e \textit{y $\in$ B $\cup$ D}, então \textit{x $\in$ A} ou \textit{x $\in$ C} e \textit{y $\in$ B} ou \textit{y $\in$ D}. Nós consideramos esse caso separadamente.
+\\
+\indent \textit{Caso 1}. \textit{x $\in$ A e y $\in$ B}. Então (\textit{x,y}) $\in$ \textit{A $\times$ B}.
+\\
+\indent  \textit{Caso 2}. \textit{x $\in$ C e y $\in$ B}. Então (\textit{x,y}) $\in$ \textit{C $\times$ D}.
+\\
+Então, tanto \textit{(x,y) $\in$ A $\times$ B} ou \textit{(x,y) $\in$ C $\times$ D}, então \textit{(x,y) $\in$ (A $\times$ B) $\cup$ (C $\times$ D).}
+\\
+\\
+7. Se \textit{A} tem \textit{m} elementos e \textit{B} tem \textit{n} elementos, quantos elementos tem \textit{A $\times$ B}?
+\\
+\\
+8. É verdade que para qualquer conjunto \textit{A, B} e \textit{C, A $\times$ (B $\setminus$ C) = (A $\times$ B) $\setminus$ (A $\times$ C)}? Dê, ou uma prova, ou um contra-exemplo para justificar sua resposta.
+\\
+\\
+9. Prove que para qualquer conjunto \textit{A, B, C} e \textit{D}, se \textit{(A $\times$ B) $\setminus$ (C $\times$ D) = [A $\times$ (B $\setminus$ D)] $\cup$ [(A $\setminus$ C) $\times$ B].}
+\\
+\\
+10. Prove que para qualquer conjunto \textit{A, B, C} e \textit{D}, se \textit{A $\times$ B} e \textit{C $\times$ D} são disjuntos, então qualquer \textit{A} e \textit{C} são disjuntos ou \textit{B} e \textit{D} são disjuntos.
+\\
+\\
+11. Suponha {\textit{A$\imath$  | $\imath$ $\in$ I}} e {\textit{B$\imath$ | $\imath$ $\in$ I}} são famílias indexadas de conjuntos.
+\\ \indent a) Prove que $\cup \imath \epsilon I$ (A$\imath$ $\times$ B$\imath$) $\subseteq$ ($\cup \imath \epsilon I$ A$\imath$) $\times$ ($\cup \imath \epsilon I$ B$\imath$).
+\\ \indent b) Para cada \textit{(i,j)} $\in$ \textit{I $\times$ I}, seja \textit{ C$( \imath, \jmath)$  =  A$\imath$ $\times$ B$\jmath$} e seja \textit{P = I $\times$ I}. Prove que $\cup p \epsilon P$ C$p$  = ($\cup i \epsilon I$A$\imath$) $\times$ ($\cup i \epsilon I$B$\imath$ )   
+\\
+\\ 
+12. Esse problema foi sugerido pelo Prof. Alan Taylor, da Union College. Considere o seguinte teorema putativo.
+\\
+\textbf{Teorema} \textit{Para cada conjunto A, B, C e D, se A $\times$ B $\subseteq$  C $\times$ D então A $\subseteq$  C e B $\subseteq$  D}.
+\\
+\\
+A afirmação está correta? Se sim, que tipo de prova se usa? Se não, pode ser consertado? O teorema está certo?
+\\
+\\
+\textit{Prova.} Suponha \textit{A $\times$ B $\subseteq$ C $\times$ D}. Seja \textit{a} um elemento arbitrário \textit{A} e seja \textit{b} um elemento arbitrário de \textit{B}. Então \textit{(a,b) $\in$  A $\times$ B}, então, desde que  \textit{A $\times$ B $\subseteq$  C $\times$ D, (a,b) $\in$ C $\times$ D}. Logo, \textit{a $\in$ C} e \textit{d $\in$ D}. Desde que \textit{a} e \textit{b} são elementos arbitrários de A e B, respectivamente, isso mostra que \textit{A $\subseteq$ C}  e \textit{B $\subseteq$ D}.
+
+

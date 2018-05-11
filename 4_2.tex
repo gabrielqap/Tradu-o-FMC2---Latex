@@ -1,4 +1,4 @@
-{\textbf{\large 2.2 Relações.}}
+{\textbf{\large 4.2 Relações.}}
 \\
 \\
 
@@ -10,11 +10,11 @@ da definição seguinte.
 \\
 \\
 
-\textbf{Definição 2.2.1.} Suponha \textit{A} e \textit{B} são conjuntos. Então um conjunto \textit{R} $\subseteq$ \textit{A} 
+\textbf{Definição 4.2.1.} Suponha \textit{A} e \textit{B} são conjuntos. Então um conjunto \textit{R} $\subseteq$ \textit{A} 
 $\times$ \textit{B} é chamada uma \textit{relação de A para B}.
 \\
 Se \textit{x} está em \textit{A} e \textit{y} está em \textit{B}, então claramente o conjunto de qualquer declaração \textit{P}
-(\textit{x}, \textit{y}) será uma relação de \textit{A} para \textit{B}. No entanto, note que a definição 2.2.1 não requer que 
+(\textit{x}, \textit{y}) será uma relação de \textit{A} para \textit{B}. No entanto, note que a definição 4.2.1 não requer que 
 o conjunto de pares ordenados seja definido como o conjunto de alguma declaração para o conjunto ser uma relação. Apesar de pensar
 sobre os conjuntos era a motivação para essa definição, a definição diz nada explícito sobre os conjuntos. De acordo com a definição,
 qualquer subconjunto de \textit{A} $\times$ \textit{B} é chamado uma relação de \textit{A} para \textit{B}.
@@ -32,7 +32,7 @@ qualquer subconjunto de \textit{A} $\times$ \textit{B} é chamado uma relação 
 3. Seja \textit{A} = \{1, 2\} e \textit{B} = $\mathcal P(A)$ = \{$\emptyset$, \{1\}, \{2\}, \{1, 2\}\}. Seja \textit{E} = 
 \{(\textit{x},\textit{y}) $\in$ \textit{A} $\times$ \textit{B}|\textit{x} $\in$ \textit{y}\}. Então \textit{E} é uma relação de 
 \textit{A} para \textit{B}. Neste caso, \textit{E} = \{(1, \{1\}), (1, \{1, 2\}), (2, \{2\}), (2, \{1, 2\})\}.
-\\
+\\	
 Para os próximos três exemplos, seja \textit{S} o conjunto de todos os estudantes da sua escola, \textit{R} o conjunto de todos os
 dormitórios, \textit{P} o conjunto de todos os professores e \textit{C} o conjunto de todos os cursos.
 \\
@@ -50,7 +50,7 @@ Aqui temos definições para vários conceitos novos envolvendo relações. Logo
 mas primeiro veja se você consegue entender os conceitos baseado nas suas definições.
 \\
 \\
-\textbf{Definição 2.2.3.} Suponha \textit{R} é uma relação de \textit{A} para \textit{B}. Então o dominio de \textit{R} é o
+\textbf{Definição 4.2.3.} Suponha \textit{R} é uma relação de \textit{A} para \textit{B}. Então o dominio de \textit{R} é o
 conjunto
 
 \begin{center}
@@ -75,3 +75,262 @@ como:
 \textit{S} $\circ$ \textit{R} = \{(\textit{a}, \textit{c}) $\in$ \textit{A} $\times$ \textit{C} | $\exists$\textit{b} $\in$
 \textit{B}((\textit{a}, \textit{b}) $\in$ \textit{R} e (\textit{b}, \textit{c}) $\in$ \textit{S})\}. 
 \end{center}
+
+Note que nos assumimos que a segunda coordenada de pares em \textit{R} e a primeira coordenada de pares em \textit{S} vem do mesmo conjunto, \textit{B}. Se esses conjuntos não são o mesmo, a composição \textit{S} $\circ$ \textit{R} seria indefinida.
+\\
+
+De acordo com definição 4.2.3, o domínio da relação de \textit{A} para \textit{B} é o conjunto contendo todas as primeiras coordenadas dos pares ordenados da relação. Isso vai geralmente é o subconjunto de \textit{A}, mas não todo o \textit{A}. Por exemplo, considere a relação \textit{L} da parte 4 do Exemplo 4.2.2, No qual os pares mostram o estudante e o dormitório em que ele mora. O domínio de \textit{L} irá conter todos os estudantes que aparecem na primeira coordenada em algum par ordenado em \textit{L} - em outras palavras, todos os estudantes que moram em algum dormitório - mas não irá conter, por exemplo, os estudantes que moram em apartamento fora do campus. Extraindo mais cuidadosamente da definição da declaração, nós temos
+
+\begin{center}
+Dom(\textit{L}) = \{\textit{s} $\in$ \textit{S} | $\exists$\textit{r} $\in$ \textit{R}((\textit{s}, \textit{r}) $\in$ \textit{L})\}
+\\
+= \{\textit{s} $\in$ \textit{S} | $\exists$\textit{r} $\in$ \textit{R}(o estudante \textit{s} mora no dormitório \textit{r})\}
+\\
+= \{\textit{s} $\in$ \textit{S} | o estudante \textit{s} mora em algum dormitório\}.
+\end{center}
+
+Semelhantemente, a imagem da relação é o conjunto contendo todas as segundas coordenadas dos pares ordenados. Por exemplo, a imagem da relação \textit{L} seria o conjunto de todos os dormitórios no qual mora algum estudante. Qualquer dormitório não está ocupado não seria uma imagem de \textit{L}.
+\\
+O inverso da relação contem exatamente o mesmo par ordenado da relação original, mas com a ordem das coordenadas de cada par invertido. Desse modo, no caso da relação \textit{L}, se Joe Smith mora no quarto 213 Davis Hall, então (Joe Smith, 213 Davis Hall) $\in$ \textit{L} e (213 David Hall, Joe Smith) $\in$ $\textit{L}^{-1}$. No geral, para qualquer estudante \textit{s} e o dormitório \textit{r}, nós temos (\textit{r}, \textit{s}) $\in$ $\textit{L}^{-1}$ sse (\textit{s}, \textit{r}) $\in$ \textit{L}. Para outro exemplo, considere a relação \textit{G} da parte 2 do Exemplo 2.2.2. Contém todos os pares ordenados de números reais (\textit{x}, \textit{y}) no qual \textit{x} é maior do que \textit{y}. Nós podemos chamar de relação "maior do que". Seu inverso é 
+
+\begin{center}
+$\textit{G}^{-1}$ = \{(\textit{x}, \textit{y}) $\in$ $\mathbb{R}$ $\times$ $\mathbb{R}$ | (\textit{y}, \textit{x}) $\in$ \textit{G}\}
+\\
+= \{(\textit{x}, \textit{y}) $\in$ $\mathbb{R}$ $\times$ $\mathbb{R}$ | \textit{y} > \textit{x}\}
+\\
+= \{(\textit{x}, \textit{y}) $\in$ $\mathbb{R}$ $\times$ $\mathbb{R}$ | \textit{y} < \textit{x}\}
+\end{center}
+
+Em outras palavras, o inverso da relação "maior que" é a relação "menor que"!
+\\
+\\
+
+O conceito mais difícil introduzido na definição 4.2.3 é o conceito de composição de duas relações. Um exemplo desse conceito, considere as relações \textit{E} e \textit{T} das partes 5 e 6 do Exemplo 4.2.2. Relembrando que \textit{E} é uma relação do conjunto \textit{S} de todos os estudantes para o conjunto \textit{C} de todos os cursos, e \textit{T} é a relação de \textit{C} para o conjunto \textit{P} de todos os professores. De acordo com a definição 2.2.3, a composição \textit{T} $\circ$ \textit{E} será a relação de \textit{S} para \textit{P} definida abaixo:
+
+\begin{center}
+\textit{T} $\circ$ \textit{E} = \{(\textit{s}, \textit{p}) $\in$ \textit{S} $\times$ \textit{P} | $\exists$\textit{c} $\in$ \textit{C} ((\textit{s}, \textit{c}) $\in$ \textit{E} e (\textit{c}, \textit{p}) $\in$ \textit{T})\}
+\\
+= \{(\textit{s}, \textit{p}) $\in$ \textit{S} $\times$ \textit{P} | $\exists$\textit{c} $\in$ \textit{C}(o estudante \textit{s} está matriculado no curso \textit{c} e o curso \textit{c} é lecionado pelo professor \textit{p})\}
+\\
+= \{(\textit{s}, \textit{p}) $\in$ \textit{S} $\times$ \textit{P} | o estudante \textit{s} está matriculado em algum curso lecionado pelo professor \textit{p}\}.
+\end{center}
+
+Portanto, se Joe Smith está matriculado em Biologia 12 e Biologia 12 é lecionada pelo professor Evans, então (Joe Smith, Biology 12) $\in$ \textit{E} e (Biologia 12, Professor Evans) $\in$ \textit{T}, Logo (Joe Smith, Professor Evans) $\in$ \textit{T} $\circ$ \textit{E}. No geral, se \textit{s} é algum estudante em particular e \textit{p} algum professor em particular, então (\textit{s}, \textit{p}) $\in$ \textit{T} $\circ$ \textit{E} sse existe algum curso c tal que (\textit{s}, \textit{c}) $\in$ \textit{E} e (\textit{c}, \textit{p}) $\in$ \textit{T}. Esta notação pode parecer meio retrógrado analisando pela primeira vez. Se (\textit{s}, \textit{c}) $\in$ \textit{E} e (\textit{c}, \textit{p}) $\in$ \textit{T}, então você pode ficar tentado a escrever (\textit{s}, \textit{p}) $\in$ \textit{E} $\circ$ \textit{T}, mas de acordo com a nossa definição, a notação adequada é (\textit{s}, \textit{p}) $\in$ \textit{T} $\circ$ \textit{E}. De fato, \textit{E} $\circ$ \textit{T} é indefinida, porque a segunda coordenada de pares ordenados em \textit{T} e a primeira coordenada de pares em \textit{E} não vem do mesmo conjunto.   
+\\
+
+\textbf{Exemplo 4.2.4.} Seja \textit{S}, \textit{R}, \textit{C}, e \textit{P} os conjuntos de estudantes, dormitórios, cursos e professores na sua escola, como antes, e seja \textit{L}, \textit{E}, e \textit{T} as relações definidas nas partes 4-6 do Exemplo 4.2.2. Descreva as relações seguintes.
+\\
+1. $\textit{E}^{-1}$
+\\
+2. \textit{E} $\circ$ $\textit{L}^{-1}$.
+\\
+3. $\textit{E}^{-1}$ $\circ$ \textit{E}.
+\\
+4. \textit{E} $\circ$ $\textit{E}^{-1}$.
+\\
+5. \textit{T} $\circ$ (\textit{E} $\circ$ $\textit{L}^{-1}$).
+\\
+6. (\textit{T} $\circ$ \textit{E}) $\circ$ $\textit{L}^{-1}$
+\\
+
+\textit{Soluções}
+\\
+\\
+1. $\textit{E}^{-1}$ = \{(\textit{c}, \textit{s}) $\in$ \textit{C} $\times$ \textit{S} | (\textit{s}, \textit{c}) $\in$ \textit{E}\} = \{(\textit{c}, \textit{s}) $\in$ \textit{C} $\times$ \textit{S} | o estudante \textit{s} está matriculado no curso \textit{c}\}. Por exemplo, se Joe Smith está matriculado em Biologia 12, então (Joe Smith, Biology 12) $\in$ \textit{E} e (BIologia 12, Joe Smith) $\in$ $\textit{E}^{-1}$.
+\\
+2. Porque $\textit{L}^{-1}$ é uma relação de \textit{R} para \textit{S} e \textit{E} é uma relação de \textit{S} para \textit{C}, \textit{E} $\circ$ $\textit{L}^{-1}$ será a relação de \textit{R} para \textit{C} definida abaixo.
+\begin{center}
+\textit{E} $\circ$ $\textit{L}^{-1}$ = \{(\textit{r}, \textit{c}) $\in$ \textit{R} $\times$ \textit{C} | $\exists$\textit{s} $\in$ \textit{S}((\textit{r}, \textit{s}) $\in$ $\textit{L}^{-1}$ e (\textit{s}, \textit{c}) $\in$ \textit{E})\}
+\\
+= \{(\textit{r}, \textit{c}) $\in$ \textit{R} $\times$ \textit{C} | $\exists$\textit{s} $\in$ \textit{S}((\textit{r}, \textit{s}) $\in$ \textit{L} e (\textit{s}, \textit{c}) $\in$ \textit{E})\}
+\\
+= \{(\textit{r}, \textit{c}) $\in$ \textit{R} $\times$ \textit{C} | $\exists$\textit{s} $\in$ \textit{S}(o estudante \textit{s} mora em um dormitório \textit{r} e está matriculado no curso \textit{c})\}
+\\
+= \{(\textit{r}, \textit{c}) $\in$ \textit{R} $\times$ \textit{C} | algum estudante que mora no dormitório \textit{r} está matriculado no curso \textit{c}\}.
+\\
+Retornando ao estudante Joe Smith, que está matriculado em Biologia 12 e mora no dormitório 213 Davis Hall, nós temos (213 Davis Hall, Joe Smith) $\in$ $\textit{L}^{-1}$ e (Joe Smith, Biologia 12) $\in$ \textit{E}, e portanto (213 Davis Hall, Biologia 12) $\in$ \textit{E} $\circ$ $\textit{L}^{-1}$.
+\\
+3. Porque \textit{E} é uma relação de \textit{S} para \textit{C} e $\textit{E}^{-1}$ é uma relação de \textit{C} para \textit{S}, $\textit{E}^{-1}$ $\circ$ \textit{E} é uma relação de \textit{S} para \textit{S} definida abaixo.
+\\
+$\textit{E}^{-1}$ $\circ$ \textit{E} = \{(\textit{s}, \textit{t}) $\in$ \textit{S} $\times$ \textit{S} | $\exists$\textit{c} $\in$ \textit{C}((\textit{s}, \textit{c}) $\in$ \textit{E} e (\textit{c}, \textit{t}) $\in$ $\textit{E}^{-1}$)\}
+\\
+= \{(\textit{s}, \textit{t}) $\in$ \textit{S} $\times$ \textit{S} | $\exists$\textit{c} $\in$ \textit{C}(o estudante \textit{s} está matriculado no curso \textit{c}, e o estudante \textit{t} também)\}
+\\
+= \{(\textit{s}, \textit{t}) $\in$ \textit{S} $\times$ \textit{S} | existe algum curso  que os estudantes \textit{s} e \textit{t} estão matriculados\}.
+\end{center}
+(Note que um elemento arbitrário de \textit{S} $\times$ \textit{S} é escrito (\textit{s}, \textit{t}), não (\textit{s}, \textit{s}), porque nós não assumimos que as duas coordenadas são iguais.)
+\\
+4. Esse não é o mesmo do exemplo anterior! Porque $\textit{E}^{-1}$ é uma relação de \textit{C} para \textit{S} e \textit{E} é uma relação de \textit{S} para \textit{C}, \textit{E} $\circ$ $\textit{E}^{-1}$ é uma relação de \textit{C} para \textit{C}. Definida abaixo.
+\begin{center}
+\textit{E} $\circ$ $\textit{E}^{-1}$ = \{(\textit{c}, \textit{d}) $\in$ \textit{C} $\times$ \textit{C} |$\exists$\textit{s} $\in$ \textit{S}((\textit{c}, \textit{s}) $\in$ $\textit{E}^{-1}$ e (\textit{s}, \textit{d}) $\in$ \textit{E})\}
+\\
+= \{(\textit{c}, \textit{d}) $\in$ \textit{C} $\times$ \textit{C} | $\exists$\textit{s} $\in$ \textit{S}(o estudante \textit{s} está matriculado no curso \textit{c}, e ele também está matriculado no curso \textit{d})\}
+
+= \{(\textit{c}, \textit{d}) $\in$ \textit{C} $\times$ \textit{C} | existe algum estudante que está matriculado nos cursos \textit{c} e \textit{d}\}.
+\end{center}
+
+5. Nós vimos na parte 2 que \textit{E} $\circ$ $\textit{L}^{-1}$ é a relação de \textit{R} para \textit{C}, e \textit{T} é a relação de \textit{C} para \textit{P}, então \textit{T} $\circ$ (\textit{E} $\circ$ $\textit{L}^{-1}$) é a relação de \textit{R} para \textit{P} definida abaixo.
+\begin{center}
+\textit{T} $\circ$ (\textit{E} $\circ$ $\textit{L}^{-1}$) = \{(\textit{r}, \textit{p}) $\in$ \textit{R} $\times$ \textit{P} |$\exists$\textit{c} $\in$ \textit{C}((\textit{r}, \textit{c}) $\in$ \textit{E} $\circ$ $\textit{L}^{-1}$ e (\textit{c}, \textit{p}) $\in$ \textit{T})\}
+\\
+= \{(\textit{r}, \textit{p}) $\in$ \textit{R} $\times$ \textit{P} |$\exists$\textit{c} $\in$ \textit{C}(algum estudante que mora no dormitório \textit{r} está matriculado no curso \textit{c}, e \textit{e} é lecionada pelo professor \textit{p})\}
+\\
+= \{(\textit{r}, \textit{p}) $\in$ \textit{R} $\times$ \textit{P} | algum estudante que mora no dormitório \textit{r} está matriculado em algum curso lecionado pelo professor \textit{p}\}.
+\end{center}
+
+6. 
+\begin{center}
+(\textit{T} $\circ$ \textit{E}) $\circ$ $\textit{L}^{-1}$ = \{(\textit{r}, \textit{p}) $\in$ \textit{R} $\times$ \textit{P} |$\exists$\textit{s} $\in$ \textit{S}((\textit{r}, \textit{s}) $\in$ $\textit{L}^{-1}$ e (\textit{s}, \textit{p}) $\in$ \textit{T} $\circ$ \textit{E})\}
+\\
+= \{(\textit{r}, \textit{p}) $\in$ \textit{R} $\times$ \textit{P} |$\exists$\textit{s} $\in$ \textit{S}(o estudante \textit{s} mora no dormitório \textit{r}, e está matriculado em um curso lecionado pelo professor \textit{p})\}
+\\
+= \{(\textit{r}, \textit{p}) $\in$ \textit{R} $\times$ \textit{P} | algum estudante que mora no dormitório \textit{r} está matriculado no curso lecionado pelo professor \textit{p}\}.
+\end{center}
+
+Note que nossas respostas para as partes 3 e 4 do exemplo 4.2.4 foram diferentes. Logo a composição das relações não é comutativa. No entanto, nossas respostas para as partes 5 e 6 são as mesmas. Isto é uma coincidência, ou no geral é verdadeiro que a composição de relações é associativa? Geralmente, olhando para os exemplos de uma nova concepção irão surgir regras que talvez sejam aplicáveis. Apesa de um contra exemplo é o bastante para mostrar que a regra é incorreta, nós devemos nunca aceitar uma regra como correta sem uma prova. O próximo teorema resume algumas propriedades basicas dos novos conceitos que nós introduzimos.
+\\
+
+\textbf{Teorema 4.2.5.} Suponha \textit{R} é uma relação de \textit{A} para \textit{B}, \textit{S} é uma relação de \textit{B} para \textit{C}, e \textit{T} é uma relação de \textit{C} para \textit{D}. Então:
+\\
+\\
+1. $(\textit{R}^{-1})^{-1}$ = \textit{R}.
+\\
+2. Dom($\textit{R}^{-1}$) = Ran(\textit{R}).
+\\
+3. Ran($\textit{R}^{-1}$) = Dom(\textit{R}).
+\\
+4. \textit{T} $\circ$ (\textit{S} $\circ$ \textit{R}) = (\textit{T} $\circ$ \textit{S}) $\circ$ \textit{R}.
+\\
+5. $(\textit{S} \circ \textit{R})^{-1}$ = $\textit{R}^{-1} \circ \textit{S}^{-1}$.
+\\
+
+Prova. Nós iremos provar 1,2 e metade do 4 e deixar o resto como exercício.
+\\
+1. Primeiramente, note que $\textit{R}^{-1}$ é uma relação de \textit{B} para \textit{A}, então $(\textit{R}^{-1})^{-1}$ é uma relação de \textit{A} para \textit{B}, assim como \textit{R}. Para ver que $(\textit{R}^{-1})^{-1} = \textit{R}$, seja (\textit{a}, \textit{b}) um par ordenado arbitrário em $\textit{A} \times \textit{B}$. Então
+\begin{center}
+$(\textit{a}, \textit{b}) \in (\textit{R}^{-1})^{-1} sse (\textit{b}, \textit{a}) \in \textit{R}^{-1} sse (\textit{a}, \textit{b}) \in \textit{R}$.
+\end{center}
+2. Primeiro note que Dom($\textit{R}^{-1}$) e Ran(\textit{R}) são ambos subconjuntos de \textit{B}. Agora seja \textit{b} um elemento arbitrário de \textit{B}. Então
+\begin{center}
+$\textit{b} \in Dom(\textit{R}^{-1})$ sse $\exists\textit{a} \in \textit{A}((\textit{b}, \textit{a}) \in \textit{R}^{-1})$ sse $\exists\textit{a} \in \textit{A}((\textit{a}, \textit{b}) \in \textit{R})$ sse $\textit{b} \in Ran(\textit{R})$.
+\end{center}
+
+4. Claramente $\textit{T} \circ (\textit{S} \circ \textit{R})$  e  $(\textit{T} \circ \textit{S}) \circ \textit{R}$  são ambas relações de \textit{A} para \textit{D}. Seja (\textit{a}, \textit{d}) um elemento arbitrário de $\textit{A} \times \textit{D}$.
+\\
+
+Primeiro, suponha $(\textit{a}, \textit{d}) \in \textit{T} \circ (\textit{S} \circ \textit{R})$. Pela definição de composição, isto significa que nós podemos escolher algum $\textit{c} \in \textit{C}$ tal que $(\textit{a}, \textit{c}) \in \textit{S} \circ \textit{R}$ e $(\textit{c}, \textit{d}) \in \textit{T}$. Como $(\textit{a}, \textit{c}) \in \textit{S} \circ \textit{R}$, nós podemos de novo usar a definição de composição e escolher algum $\textit{b} \in \textit{B}$ tal que $(\textit{a}, \textit{b}) \in \textit{R}$ e $(\textit{b}, \textit{c}) \in \textit{S}$. Agora que temos $(\textit{b}, \textit{c}) \in \textit{S}$ e $(\textit{c}, \textit{d}) \in \textit{T}$, nós podemos concluir que $(\textit{b}, \textit{d}) \in \textit{T} \circ \textit{S}$. Semelhante, desde que $(\textit{a}, \textit{b}) \in \textit{R}$ e $(\textit{b}, \textit{d}) \in \textit{T} \circ \textit{S}$,  segue que $(\textit{a}, \textit{d}) \in (\textit{T} \circ \textit{S}) \circ \textit{R}$. 
+\\
+\\
+\begin{center}
+\textbf{Exercícios}
+\end{center}
+
+1. Encontre os domínios e imagens das relações seguintes.
+\\
+
+(a) \{$(\textit{p}, \textit{q}) \in \textit{P} \times \textit{P}$ | a pessoa \textit{p} é pai da pessoa \textit{q}\}, onde \textit{P} é o conjunto de todas as pessoas vivas.
+\\
+
+(b) \{$(\textit{x}, \textit{y}) \in \mathbb{R}^{2} | \textit{y} > \textit{x}^{2}$ \}.
+\\
+2. Encontre os domínios e as imagens das relações seguintes.
+\\
+
+(a) \{($\textit{p}, \textit{q}) \in \textit{P} \times \textit{P}$ | a pessoa\textit{p} é irmão da pessoa \textit{q}\}, onde \textit{P} é o conjunto de todas as pessoas vivas.
+\\
+
+(b) \{$(\textit{x}, \textit{y}) \in \mathbb{R}^{2}$ | $\textit{y}^{2} = 1 - 2/(\textit{x}^{2} + 1)$\}.
+\\
+3. Seja \textit{L} e \textit{E} relações definidas nas partes 4 e 5 do exemplo 4.2.2. Descreva as relações seguintes:
+\\
+
+(a) $\textit{L}^{-1} \circ \textit{L}$.
+\\
+
+(b) $\textit{E} \circ (\textit{L}^{-1} \circ \textit{L})$.
+\\
+4. Suponha que \textit{A} = \{1, 2, 3\}, \textit{B} = \{4, 5, 6\}, \textit{R} = \{(1, 4), (1, 5), (2, 5), (3, 6)\}, e \textit{S} = \{(4, 5), (4, 6), (5, 4), (6, 6)\}. Note que \textit{R} é uma relação de \textit{A}para \textit{B} e \textit{S} é uma relação de \textit{B} para \textit{B}. Encontre as relações seguintes:
+\\
+
+(a) $\textit{S} \circ \textit{R}$.
+\\
+
+(b) $\textit{S} \circ \textit{S}^{-1}$.
+\\
+\\
+5. Suponha que \textit{A} = \{1, 2, 3\}, \textit{B} = \{4, 5\}, \textit{C} = \{6, 7, 8\}, \textit{R} = \{(1, 7), (3, 6), (3, 7)\}, e \textit{S} = \{(4, 7), (4, 8), (5, 6)\}. Note que \textit{R} é uma relação de \textit{A} para \textit{C} e \textit{S} é uma relação de \textit{B} para \textit{C}. Encontre as seguintes relações:
+\\
+
+(a) $\textit{S}^{-1} \circ \textit{R}$.
+\\
+
+(b) $\textit{R}^{-1} \circ \textit{S}$.
+\\
+\\
+6. (a) Prove a parte 3 do teorema 4.2.5 imitando a prova da parte 2 do texto.
+\\
+
+(b) De uma alternativa para a prova da parte 3 do teorema 4.2.5 mostrando seguimento das partes 1 e 2.
+\\
+
+(c) Complete a prova da parte 4 do teorema 4.2.5.
+\\
+
+(d) Prove a parte 5 do teorema 4.2.5.
+\\
+\\
+7. Seja \textit{E} = \{$(\textit{p}, \textit{q}) \in \textit{P} \times \textit{P}$ | a pessoa \textit{p} é um inimigo da pessoa \textit{q}\}, e \textit{F} = \{$(\textit{p}, \textit{q}) \in \textit{P} \times \textit{P}$ | a pessoa \textit{p} é amiga da pessoa \textit{q}\}, onde \textit{P} é o conjunto de todas as pessoas. O que o ditado "o inimigo do meu inimigo é meu amigo" quer dizer sobre a relação \textit{E} e \textit{F}? 
+\\
+8. Suponha \textit{R} é uma relação de \textit{A} para \textit{B} e \textit{S} é uma relação de \textit{B} para \textit{C}.
+\\
+
+(a) Prove que $Dom(\textit{S} \circ \textit{R}) \subseteq Dom(\textit{R})$.
+\\
+
+(b) Prove que se $Ran(\textit{R}) \subseteq Dom(\textit{S})$ então $Dom(\textit{S} \circ \textit{R}) = Dom(\textit{R})$.
+\\
+
+(c) Formule e prove teoremas similar sobre Ran($\textit{S} \circ \textit{R}$).
+\\
+9. Suponha \textit{R} e \textit{S} são relações de \textit{A} para \textit{B}. As supostas declarações são verdadeiras ? Justifique sua resposta com provas ou contra exemplos.
+\\
+ 
+(a) $\textit{R} \subseteq Dom(\textit{R}) \times Ran(\textit{R})$.
+\\
+
+(b) Se $\textit{R} \subseteq \textit{S}$ então $\textit{R}^{-1} \subseteq \textit{S}^{-1}$. 
+\\
+
+(c) $(\textit{R} \cup \textit{S})^{-1}$ = $\textit{R}^{-1} \cup \textit{S}^{-1}$.
+\\
+10. Suponha \textit{R} é uma relação de \textit{A} para \textit{B} e \textit{S} é uma relação de \textit{B} para \textit{C}. Prove que $\textit{S} \circ \textit{R} = \emptyset$ sse Ran(\textit{R}) e Dom(\textit{S}) são disjuntos.
+\\
+11. Suponha \textit{R} é uma relação  de \textit{A} para \textit{B} e \textit{S} e \textit{T} são relações de \textit{B} para \textit{C}.
+\\
+
+(a) Prove que $(\textit{S} \circ \textit{R})$\textbackslash$(\textit{T} \circ \textit{R}) \subseteq (\textit{S}$\textbackslash $\textit{T}) \circ \textit{R}$.
+\\
+
+(b) O que está errado com a prova que ($\textit{S}$\textbackslash$\textit{T}) \circ \textit{R} \subseteq (\textit{S} \circ \textit{R})$\textbackslash$(\textit{T} \circ \textit{R})$? 
+\\
+Prova. Suponha $(\textit{a}, \textit{c}) \in (\textit{S}$\textbackslash$\textit{T}) \circ \textit{R}$. Então nós podemos escolher algum $\textit{b} \in \textit{B}$ tal que $(\textit{a}, \textit{b}) \in \textit{R}$ e $(\textit{b}, \textit{c}) \in \textit{S}$\textbackslash\textit{T}), então (\textit{b}, \textit{c}) $\in \textit{S}$ e $(\textit{b}, \textit{c}) \not\in \textit{T}$. Como $(\textit{a}, \textit{b}) \in \textit{R}$ e $(\textit{b}, \textit{c}) \in \textit{S}$,  $(\textit{a}, \textit{b}) \in \textit{S} \circ \textit{R}$. E $(\textit{a}, \textit{b}) \in \textit{R} e (\textit{b}, \textit{c}) \in \textit{T}$, $(\textit{a}, \textit{c}) \not\in \textit{T} \circ \textit{R}$. Então $(\textit{a}, \textit{c}) \in (\textit{S} \circ \textit{R})$\textbackslash$(\textit{T} \circ \textit{R})$. Como (\textit{a}, \textit{c}) era arbitrário, isso mostra que (\textit{S}\textbackslash\textit{T}) $\circ \textit{R} \subseteq (\textit{S} \circ \textit{R})$\textbackslash$(\textit{T} \circ \textit{R})$.
+\\
+
+(c) É verdadeiro que (\textit{S}\textbackslash
+\textit{T}) $\circ \textit{R} \subseteq (\textit{S} \circ \textit{R})$\textbackslash$(\textit{T} \circ \textit{R})$? Justifique sua resposta com uma prova ou um contra exemplo.
+\\
+\\
+12. Suponha \textit{R} uma relação de \textit{A} para \textit{B} e \textit{S} e \textit{T} relações de \textit{B} para \textit{C}. As seguintes declarações são verdadeiras? Justifique sua resposta com provas ou contra exemplos.
+\\
+
+(a) Se $\textit{S} \subseteq \textit{T}$ então $\textit{S} \circ \textit{R} \subseteq \textit{T} \circ \textit{R}$.
+\\
+
+(b) $(\textit{S} \cap \textit{T}) \circ \textit{R} \subseteq (\textit{S} \circ \textit{R} \cap (\textit{T} \circ \textit{R})$.
+\\
+
+(c) $(\textit{S} \cap \textit{T}) \circ \textit{R}$ = $(\textit{S} \circ \textit{R} \cap (\textit{T} \circ \textit{R})$.
+\\
+
+(d) $(\textit{S} \cup \textit{T}) \circ \textit{R} \subseteq (\textit{S} \circ \textit{R} \cup (\textit{T} \circ \textit{R})$.
+
